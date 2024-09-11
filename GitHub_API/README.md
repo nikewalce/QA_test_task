@@ -12,10 +12,15 @@ GitHub API
 
 Создание токена
 ![image](https://github.com/user-attachments/assets/4a03172a-a5b4-4f76-b8f7-9e6392b88563)
+
 ![image](https://github.com/user-attachments/assets/ab0e6584-95dd-4ca2-9343-813b2c6f9cae)
+
 ![image](https://github.com/user-attachments/assets/06f80a25-57c6-4f66-9d05-26111223c202)
+
 ![image](https://github.com/user-attachments/assets/0bf60acc-d33b-461f-aa3b-20e9f07e848d)
+
 ![image](https://github.com/user-attachments/assets/720daa4a-8f60-49bd-95c7-f9a2e46c5502)
+
 ![image](https://github.com/user-attachments/assets/db8b1239-b14a-43c1-91cc-e5ccdef3f157)
 
 
