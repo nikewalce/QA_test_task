@@ -1,0 +1,54 @@
+import subprocess
+subprocess.run(['pip', 'install', 'selenium'])
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+
+
+driver = webdriver.Chrome()
+
+driver.get("https://www.saucedemo.com/")
+
+username_field = driver.find_element(By.ID, "user-name")
+password_field = driver.find_element(By.ID, "password")
+login_button = driver.find_element(By.ID, "login-button")
+
+username_field.send_keys("standard_user")
+password_field.send_keys("secret_sauce")
+
+
+login_button.click()
+
+add_to_cart = driver.find_element(By.ID, "add-to-cart-sauce-labs-backpack")
+add_to_cart.click()
+
+shop = driver.find_element(By.CLASS_NAME, 'shopping_cart_link')
+shop.click()
+
+if bool(driver.find_elements(By.CLASS_NAME, 'cart_item')):
+    checkout = driver.find_element(By.ID, 'checkout')
+    checkout.click()
+
+    first_name = driver.find_element(By.ID, 'first-name')
+    last_name = driver.find_element(By.ID, 'last-name')
+    postal_code = driver.find_element(By.ID, 'postal-code')
+
+    first_name.send_keys("name")
+    last_name.send_keys("last_name")
+    postal_code.send_keys("200")
+
+    continue_button = driver.find_element(By.ID, 'continue')
+    continue_button.click()
+
+    finish_button = driver.find_element(By.ID, 'finish')
+    finish_button.click()
+
+    check = driver.find_element(By.CLASS_NAME, 'title')
+    if check.text == 'Checkout: Complete!':
+        print('All good')
+    else:
+        print('Something\'s wrong. Product not purchased')
+else:
+    print('Product not added')
+
+
+driver.quit()
