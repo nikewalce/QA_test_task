@@ -8,12 +8,13 @@ E2E UI
 GitHub API
 1. Создать новый проект в любом из IDE. Пример из PyCharm: File -> New Project -> в Location вводим название проекта -> выбираем Virtualenv -> Create.
 2. Копируем и вставляем содержимое из файла GitHub API, в созданнный файл Python.
-3. В терминале устанавливаем зависимости pip install -r requirements.txt
-4. В файле .env заполнить поля своими данными:
+3. Копируем и вставляем содержимое файла requirements.txt, в созданный свой requirements.txt
+4. В терминале устанавливаем зависимости pip install -r requirements.txt
+5. В файле .env заполнить поля своими данными:
     access_token = "Свой_токен.Процесс_создания_изображен_ниже(Создание_токена)"
     repo_name = "Название_репозитория_который_нужно_создать"
     user = "Свой_username"
-5. Запустить код
+6. Запустить код
 
 Создание токена
 ![image](https://github.com/user-attachments/assets/4a03172a-a5b4-4f76-b8f7-9e6392b88563)
