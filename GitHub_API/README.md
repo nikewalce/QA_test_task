@@ -1,13 +1,7 @@
-# QA_test_task
-
-E2E UI
-1. Создать новый проект в любом из IDE. Пример из PyCharm: File -> New Project -> в Location вводим название проекта -> выбираем Virtualenv -> Create.
-2. Скопировать и вставить содержимое из файла E2E UI, в созданнный файл Python.
-3. Запустить код
-
 GitHub API
+
 1. Создать новый проект в любом из IDE. Пример из PyCharm: File -> New Project -> в Location вводим название проекта -> выбираем Virtualenv -> Create.
-2. Копируем и вставляем содержимое из файла GitHub API, в созданнный файл Python.
+2. Копируем и вставляем содержимое из файла test_api.py, в созданнный файл Python.
 3. Копируем и вставляем содержимое файла requirements.txt, в созданный свой requirements.txt
 4. В терминале устанавливаем зависимости pip install -r requirements.txt
 5. В файле .env заполнить поля своими данными:
